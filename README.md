@@ -48,9 +48,10 @@ At this moment there are no known issues. Please let us know if you have any pro
 ### Troubleshoot
 
 * Please check if you have the right version installed of the [DLS]
-* If you updated the DLS, please restart your browser, or restart your computer completely.
+* If you updated the DLS, please restart your browser or restart your computer completely.
 * Clear the Magento cache
 * Clear your own browser cache
+* Please check on [this demo page](http://www.labelwriter.com/software/dls/sdk/samples/js/PrintLabel/PrintLabel.html) if you can print a label through your browser. If not, try a different browser. The demo page should work. If not, this module probably won't work. 
 
 ### Todo's
 
