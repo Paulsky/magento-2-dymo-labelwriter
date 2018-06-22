@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="mass_print_dymo_labels">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">mass_print_dymo_labels</item>
+                        <item name="label" xsi:type="string" translate="true">Print Dymo Labels</item>
+                        <!--<item name="callback" xsi:type="array">-->
+                            <!--<item name="provider" xsi:type="string">sales_order_grid.sales_order_grid_data_source</item>-->
+                            <!--<item name="target" xsi:type="string">customCallback</item>-->
+                        <!--</item>-->
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">Print Dymo Labels</item>
+                            <item name="message" xsi:type="string" translate="true">Are you sure to print labels for the selected orders?</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>
