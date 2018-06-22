@@ -1,6 +1,6 @@
 # Magento 2.* Dymo LabelWriter
 
-This extension/module/plugin lets you print a label from the order overview in the backend of OpenCart 2.*. For the extension of OpenCart please see this project: [OpenCart Dymo LabelWriter].
+This extension/module/plugin lets you print a label from the order overview in the backend of Magento 2.*. For the extension of OpenCart please see this project: [OpenCart Dymo LabelWriter].
 
 ![magento-2-order-overview-label](https://user-images.githubusercontent.com/9481318/41775142-09f23708-7623-11e8-831f-ae438841ef1b.png)
 
@@ -24,16 +24,17 @@ This extension depends on the following frameworks/SDK's/modules
 
 Choose between 1.A or 1.B.
 
-#### 1.A Composer (recommended)
+#### 1.A. Composer (recommended)
 * Navigate in the console to the root directory of your Magento 2 installation
 * Run: composer require wdevs/magento-2-dymo
 
-#### 1.B Manual
+#### 1.B. Manual
 
 * Create folders: /app/code/Wdevs/Dymo/
+* Download all files from this repository
 * Copy all files to /app/code/Wdevs/Dymo/
 
-#### 2 Enable the module
+#### 2. Enable the module
 * Navigate in the console to the root directory of your Magento 2 installation
 * Run: php ./bin/magento module:enable Wdevs_Dymo
 * Run: php ./bin/magento setup:upgrade
@@ -43,6 +44,13 @@ Choose between 1.A or 1.B.
 ### Known Issues
 
 At this moment there are no known issues. Please let us know if you have any problems with the module!
+
+### Troubleshoot
+
+* Please check if you have the right version installed of the [DLS]
+* If you updated the DLS, please restart your browser, or restart your computer completely.
+* Clear the Magento cache
+* Clear your own browser cache
 
 ### Todo's
 
@@ -57,7 +65,7 @@ At this moment there are no known issues. Please let us know if you have any pro
 
 ### Contribute
 
-Want to contribute? Be my guest and fork this project or create a pull request! Let me know all your requests and suggestions!
+Thank you for your interest in contributing! There are many ways to contribute to this project. Get started [here](https://github.com/Paulsky/magento-2-dymo-labelwriter/blob/master/CONTRIBUTING.md).
 
 ### License
 
