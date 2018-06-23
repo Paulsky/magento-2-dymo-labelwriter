@@ -13,8 +13,8 @@ define([
     function printOrder(orderId, authToken){
         var defer = $.Deferred();
         wdevsAddressFormater.getShippingAddressByOrder(orderId, authToken).done(function(address){
-            //"NAME \nSTREET \nPOSTCODE  CITY \nCOUNTRY"
-            //"P. Wijnberg \nGrote Markt 22 \n1234 AB  's Gravenzande \nNederland"
+            //"NAME \nSTREET \nPOSTCODE  CITY\n COUNTRY"
+            //"P. Wijnberg \nGrote Markt 22 \n1234 AB  's Gravenzande\n Nederland"
             wdevsDymo.printLabel(address);
 
             //uncheck the checkboxes
@@ -28,6 +28,23 @@ define([
         });
 
         return defer.promise();
+    }
+
+    //Should be a temporarily function
+    //But Magento's url.build is not working
+    //except if your create another 3+ files only for the url...
+    function getAdminPath() {
+        var pathName = window.location.pathname;
+        var pathArray = pathName.split('/');
+        var adminPath = "admin";
+        for (var i = 0; i < pathArray.length; i++) {
+            if(pathArray[i] != ""){
+                adminPath = pathArray[i];
+                break;
+            }
+        }
+
+        return adminPath;
     }
 
     return function (target) {
@@ -72,11 +89,12 @@ define([
                             if(wdevsDymo.isLoaded()) {
                                 //show loader
                                 $('body').trigger('processStart');
-
+                                var adminPath = getAdminPath();
+                                var authUrl = '/' + adminPath +'/dymo/auth/token';
                                 $.ajax({
                                     method: 'POST',
                                     data: {form_key: window.FORM_KEY},
-                                    url: '/admin/dymo/auth/token',
+                                    url: authUrl,
                                     dataType: 'json',
                                 }).done(function (tokenData) {
                                     //tokenData = {'authToken': 'xyx'}
