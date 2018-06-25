@@ -62,7 +62,7 @@ At this moment there are no known issues. Please let us know if you have any pro
  - Dynamic label design / label upload
 
 ### Version
-0.1.0 Beta
+0.1.1 Beta
 
 ### Contribute
 
