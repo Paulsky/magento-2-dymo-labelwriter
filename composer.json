@@ -2,7 +2,7 @@
     "name": "wdevs/magento-2-dymo",
     "description": "Print shipping address labels with a Dymo LabelWriter from a Magento 2 backend",
     "type": "magento2-module",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "require": {
         "magento/framework": "100.*|101.*|102.*"
     },
