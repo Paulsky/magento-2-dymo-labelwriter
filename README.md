@@ -6,7 +6,7 @@ This extension/module/plugin lets you print a label from the order overview in t
 
 Note the following:
 * This extension is **not** tested thoroughly
-* This extension is only tested in Magento **2.2.4**
+* This extension is only tested in Magento **2.2.4** and **2.2.5**
 * This extension is only tested with a **Dymo LabelWriter 450**
 * This extension is only tested on **Windows 10 with Internet Explorer 11 (- succeeded) and Google Chrome 67 (- succeeded)**
 * Please check on [this demo page](http://www.labelwriter.com/software/dls/sdk/samples/js/PrintLabel/PrintLabel.html) if you can print a label through your browser
@@ -17,7 +17,7 @@ This extension depends on the following frameworks/SDK's/modules
 
 * An installed and connected Dymo LabelWriter or a configured (fake) Dymo LabelWriter driver
 * [DLS] DYMO Label Software v8.7.2
-* [jQuery] 1.12.4 (already used in the backend of Magento 2.2.4)
+* [jQuery] 1.12.4 (already used in the backend of Magento 2.2.4/2.2.5)
 * [Dymo Label Framework SDK]
 
 ### Installation
